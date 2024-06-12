@@ -1,6 +1,6 @@
 .css {
   display: flex;
-  background-color: black;
+  background-color: #1a1b26; /* Matched the background of the highlight.js theme for .hljs.background-color */
   padding: 0;
   width: 100%;
   height: calc(100vh - 50px);

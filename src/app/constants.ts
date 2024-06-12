@@ -9,6 +9,30 @@ export const flexItemStyleValues = {
   ],
 };
 
+export const keyMapper = {
+  justifyContent: "justify-content",
+  alignContent: "align-content",
+  alignItems: "align-items",
+  flexWrap: "flex-wrap",
+  columnGap: "column-gap",
+  rowGap: "row-gap",
+  flexDirection: "flex-direction",
+};
+
+/**
+ * These are the default values defined by the CSS specification.
+ */
+export const flexContainerHTMLDefaultValues = {
+  flexDirection: "row",
+  flexWrap: "nowrap",
+  justifyContent: "flex-start",
+  alignItems: "stretch",
+  alignContent: "normal",
+  gap: "normal",
+  rowGap: "normal",
+  columnGap: "normal",
+};
+
 export const safeKeywords = ["safe", "unsafe"];
 
 export const flexContainerStyleValues = {

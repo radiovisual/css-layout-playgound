@@ -1,10 +1,10 @@
 .container {
   display: grid;
   grid-template-areas:
-    "main main main main css css"
-    "main main main main css css"
-    "settings settings settings settings css css"
-    "settings settings settings settings css css";
+    "main main main main main main main css"
+    "main main main main main main main css"
+    "settings settings settings settings settings settings settings css"
+    "settings settings settings settings settings settings settings css";
 }
 
 .main {

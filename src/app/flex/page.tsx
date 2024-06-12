@@ -65,7 +65,7 @@ export default function FlexPage() {
           />
         </div>
         <div className={styles.css}>
-          <CSSCode />
+          <CSSCode flexContainerStyles={flexContainerStyles} />
         </div>
       </div>
     </main>
