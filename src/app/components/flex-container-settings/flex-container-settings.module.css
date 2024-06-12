@@ -1,0 +1,11 @@
+.container {
+  max-width: 50%;
+  border: solid thin red;
+  color: black;
+}
+
+.size-sliders {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}

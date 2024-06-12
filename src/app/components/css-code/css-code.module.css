@@ -1,0 +1,7 @@
+.css {
+  display: flex;
+  background-color: black;
+  padding: 0;
+  width: 100%;
+  height: calc(100vh - 50px);
+}

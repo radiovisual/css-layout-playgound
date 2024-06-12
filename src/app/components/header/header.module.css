@@ -1,0 +1,27 @@
+.nav {
+  display: flex;
+  background-color: #343434;
+  padding: 10px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.version {
+  color: yellow;
+  font-size: 11px;
+}
+
+.name {
+  width: 270px;
+}
+
+.links {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.links a {
+  padding-right: 15px;
+}
