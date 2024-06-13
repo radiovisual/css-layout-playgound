@@ -1,7 +1,6 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-import { Header } from "./components/header/header";
+import FlexPage from "./flex/page";
 
 export default function Home() {
-  return <main className={styles.main}>Hi!</main>;
+  // Temporarily make the flex page the home page.
+  return <FlexPage />;
 }

@@ -2,6 +2,8 @@
 
 > A web application to experiment with CSS layouts.
 
+:construction: This is a work in progress.
+
 ## Development
 
 First, run the development server:
