@@ -17,18 +17,20 @@ export type FlexItemStyles = {
   height?: string;
 };
 
+type SafeUnsafe<T extends string> = T | `${T} safe` | `${T} unsafe`;
+
 export type FlexContainerStyles = {
   width: number | string;
   height: number | string;
   margin: number | string;
   padding: number | string;
   display: "flex" | "block" | "inline-flex";
-  gap?: number;
-  rowGap?: number;
-  columnGap?: number;
+  gap?: number | string;
+  rowGap?: number | string;
+  columnGap?: number | string;
   flexDirection?: "row" | "row-reverse" | "column" | "column-reverse";
   flexWrap?: "nowrap" | "wrap" | "wrap-reverse";
-  justifyContent?:
+  justifyContent?: SafeUnsafe<
     | "flex-start"
     | "flex-end"
     | "center"
@@ -38,9 +40,9 @@ export type FlexContainerStyles = {
     | "start"
     | "end"
     | "left"
-    | "right";
-  justifyContentSafeValue?: "safe" | "unsafe";
-  alignItems?:
+    | "right"
+  >;
+  alignItems?: SafeUnsafe<
     | "stretch"
     | "flex-start"
     | "flex-end"
@@ -52,12 +54,10 @@ export type FlexContainerStyles = {
     | "end"
     | "self-start"
     | "self-end"
-    | "safe"
-    | "unsafe"
     | "unset"
-    | "normal";
-  alignItemsSafeValue?: "safe" | "unsafe";
-  alignContent?:
+    | "normal"
+  >;
+  alignContent?: SafeUnsafe<
     | "normal"
     | "start"
     | "center"
@@ -71,7 +71,5 @@ export type FlexContainerStyles = {
     | "space-around"
     | "space-evenly"
     | "stretch"
-    | "safe"
-    | "unsafe";
-  alignContentSafeValue?: "safe" | "unsafe";
+  >;
 };

@@ -1,9 +1,10 @@
 .container {
   display: flex;
-  background-color: #525252;
-  border: solid thin #343434;
+  background-color: #ff375d;
+  border: solid thin #ff0054;
   padding: 10px;
   width: 80%;
   height: 80%;
   justify-self: center;
+  box-shadow: 5px 5px 6px 1px rgba(0, 0, 0, 0.37);
 }

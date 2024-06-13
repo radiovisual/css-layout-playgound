@@ -6,16 +6,15 @@ import { FlexContainer } from "@/app/components/flex-container";
 import { FlexItem } from "@/app/components/flex-item";
 import { CSSCode } from "@/app/components/css-code";
 import { FlexContainerSettings } from "@/app/components/flex-container-settings";
+import { ToolBar } from "@/app/components/toolbar";
 import type { FlexContainerStyles, FlexItemStyles } from "@/app/types";
 
 const defaultContainerStyles: FlexContainerStyles = {
-  alignContentSafeValue: undefined,
-  alignItemsSafeValue: undefined,
   justifyContent: "flex-start",
-  flexDirection: "column",
+  flexDirection: "row",
   alignContent: "normal",
   alignItems: "stretch",
-  flexWrap: "wrap",
+  flexWrap: "nowrap",
   display: "flex",
   columnGap: 0,
   height: 80,
@@ -50,6 +49,11 @@ export default function FlexPage() {
     setFlexContainerStyles(updatedStyles);
   }
 
+  function onReset() {
+    setFlexContainerStyles(defaultContainerStyles);
+    setFlexItems(defaultFlexItems);
+  }
+
   return (
     <main className={styles.flexpage}>
       <div className={styles.container}>
@@ -59,6 +63,7 @@ export default function FlexPage() {
           </FlexContainer>
         </div>
         <div className={styles.settings}>
+          <ToolBar onReset={onReset} />
           <FlexContainerSettings
             onUpdateFlexContainerCSSSetting={onUpdateFlexContainerCSSSetting}
             flexContainerStyles={flexContainerStyles}
