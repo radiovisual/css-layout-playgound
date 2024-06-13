@@ -1,0 +1,15 @@
+.container {
+  max-width: 40%;
+  border-right: solid thin #ccc;
+  background-color: #f0f0f0;
+  color: black;
+  padding: 20px;
+  height: 100%;
+  box-sizing: padding-box;
+}
+
+.size-sliders {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}

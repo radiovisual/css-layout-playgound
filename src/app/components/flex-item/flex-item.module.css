@@ -1,0 +1,22 @@
+.flex-item {
+  display: flex;
+  background-color: black;
+  border: solid thin #343434;
+  border-radius: 15px;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  margin: 10px;
+  font-size: 12px;
+  color: #ccc;
+}
+
+.number {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  font-size: 16px;
+  color: white;
+  font-weight: 700;
+}

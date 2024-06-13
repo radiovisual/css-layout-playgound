@@ -1,0 +1,35 @@
+.container {
+  display: grid;
+  grid-template-areas:
+    "main main main main main main main css"
+    "main main main main main main main css"
+    "settings settings settings settings settings settings settings css"
+    "settings settings settings settings settings settings settings css";
+}
+
+.main {
+  grid-area: main;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(
+    45deg,
+    #e8e8e8 29.55%,
+    #f0f0f0 29.55%,
+    #f0f0f0 50%,
+    #e8e8e8 50%,
+    #e8e8e8 79.55%,
+    #f0f0f0 79.55%,
+    #f0f0f0 100%
+  );
+  background-size: 31.11px 31.11px;
+}
+
+.settings {
+  grid-area: settings;
+  background-color: #d9d9d9;
+}
+
+.css {
+  grid-area: css;
+}

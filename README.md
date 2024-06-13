@@ -1,9 +1,19 @@
 # css-layout-playground
 
-> A place to practice and master CSS layouts
+> A web application to experiment with CSS layouts.
 
-![Try it out!](https://radiovisual.github.io/css-layout-playground/)
+🚧 **This is a work in progress**, but you can [try it out!](https://radiovisual.github.io/css-layout-playground/flex)
+
+## Development
+
+First, run the development server:
+
+```bash
+npm run dev
+```
+
+then open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ---
 
-:heart: :unicorn:
+:rainbow: :unicorn:
