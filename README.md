@@ -2,7 +2,7 @@
 
 > A web application to experiment with CSS layouts.
 
-:construction: This is a work in progress.
+🚧 **This is a work in progress**, but you can [try it out!](https://radiovisual.github.io/css-layout-playground/flex)
 
 ## Development
 
